@@ -1,0 +1,9 @@
+{
+  "name": "crashpad-error",
+  "version-string": "0.0.0",
+  "dependencies": [
+    {
+      "name": "crashpad"
+    }
+  ]
+}
