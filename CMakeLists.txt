@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.19)
 
-project(crashpad_error LANGUAGES CXX)
+project(example LANGUAGES CXX)
 
 find_package(crashpad CONFIG REQUIRED)
 
-add_executable(crashpad_error)
+add_executable(example)
 
-target_sources(crashpad_error PRIVATE ${CMAKE_SOURCE_DIR}/src/main.cpp)
+target_sources(example PRIVATE ${CMAKE_SOURCE_DIR}/src/main.cpp)
 
-target_include_directories(crashpad_error PRIVATE ${CMAKE_SOURCE_DIR}/src)
+target_include_directories(example PRIVATE ${CMAKE_SOURCE_DIR}/src)
 
-target_link_libraries(crashpad_error PRIVATE crashpad::crashpad)
+target_link_libraries(example PRIVATE crashpad::crashpad)
