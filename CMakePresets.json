@@ -15,7 +15,8 @@
         "CMAKE_TOOLCHAIN_FILE": {
           "type": "FILEPATH",
           "value": "${sourceDir}/vcpkg/scripts/buildsystems/vcpkg.cmake"
-        }
+        },
+        "VCPKG_OVERLAY_TRIPLETS": "${sourceDir}/triplets"
       }
     },
     {
@@ -25,7 +26,7 @@
       "inherits": "base",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "RelWithDebInfo",
-        "VCPKG_DEFAULT_TRIPLET": "x64-windows-static"
+        "VCPKG_DEFAULT_TRIPLET": "x64-windows"
       }
     }
   ],
