@@ -3,7 +3,8 @@
   "version-string": "0.0.0",
   "dependencies": [
     {
-      "name": "crashpad"
+      "name": "crashpad",
+      "platform": "windows"
     }
   ]
 }
